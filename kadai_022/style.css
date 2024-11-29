@@ -1,0 +1,76 @@
+h1 {
+    margin: 0px;
+    color: rgb(255, 255, 255); 
+}
+p {
+    margin: 0px; 
+}
+
+h2 {
+    margin: 0px;
+    font-size: 25px;
+    border-bottom: dotted 3px rgb(236, 122, 122);
+}
+h2::before {
+    margin: 0px;
+    content: "●";
+    color: rgb(239, 111, 139);
+}
+body {
+    margin: 0px;
+}
+header {
+    margin-bottom: 20px;
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+main {
+    margin: 10px,10px,10px,10px; 
+}
+#parent {
+    display: flex;
+    justify-content: space-around; 
+}
+.contents{
+    border: 3px solid; 
+    border-color: rgb(238, 204, 204); 
+    flex-basis: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+}
+p:nth-of-type(2):first-letter{
+    font-weight: bold;
+    color: rgb(97, 206, 249);     
+}
+img{
+    margin: 10px,0px,10px,0px; 
+    width: 70%;
+}
+footer {
+    background-color: rgb(244, 79, 79);
+    text-align: center;
+}
+a {
+    color: rgb(255, 255, 255); }
+a:visited {
+    color: rgb(193, 234, 251);
+}
+a:hover {
+    color: rgb(245, 178, 168); 
+}
+
+@media screen and (max-width: 768px) {
+    div {
+        display: inline-block;
+    }
+    #parent {
+        display: block;     
+    }
+}
